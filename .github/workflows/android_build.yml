@@ -22,7 +22,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: Slack Notifications
-      uses: act10ns/slack@v1
+      uses: slackapi/slack-github-action@v1.23.0
       with:
         status: ${{ job.status }}
         steps: ${{ toJson(steps) }}
