@@ -22,12 +22,12 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+    - name: Slack Pop Up
+      uses: rtCamp/action-slack-notify@v2
     - name: Slack Notifications
       uses: act10ns/slack@v1
       with:
         status: ${{ job.status }}
         steps: ${{ toJson(steps) }}
         channel: '#android-experiments'
-    - name: Slack Pop Up
-      uses: rtCamp/action-slack-notify@v2
       if: always()
