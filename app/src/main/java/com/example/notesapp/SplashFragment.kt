@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 
 
-private const val MINIMUM_SPLASH_DURATION_MS = 2000L
+private const val MINIMUM_SPLASH_DURATION_MS = 4000L
 
 class SplashFragment : Fragment() {
 
