@@ -29,20 +29,13 @@ android {
             minifyEnabled false
             shrinkResources false
             debuggable true
-
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            firebaseAppDistribution {
-                serviceCredentialsFile="/notes/app/file.json"
-            }
         }
         release {
             minifyEnabled true
             shrinkResources true
             debuggable false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            firebaseAppDistribution {
-                serviceCredentialsFile="/notes/app/file.json"
-            }
         }
     }
     compileOptions {
