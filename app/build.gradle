@@ -57,8 +57,15 @@ dependencies {
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
     testImplementation 'junit:junit:4.13.2'
+    testImplementation 'com.google.truth:truth:1.1.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.ext:junit-ktx:1.1.2'
+
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     // for navigation between fragments
@@ -69,8 +76,14 @@ dependencies {
     implementation 'androidx.room:room-runtime:2.4.2'
 //    annotationProcessor 'androidx.room:room-compiler:2.4.2'
     kapt "androidx.room:room-compiler:2.4.2"
-
     // view
     implementation "androidx.recyclerview:recyclerview:1.2.1"
+    testImplementation 'androidx.arch.core:core-testing:2.1.0'
+    testImplementation 'androidx.room:room-testing:2.2.6'
+    androidTestImplementation 'com.google.truth:truth:1.1.2'
+    androidTestImplementation 'androidx.arch.core:core-testing:2.1.0'
+    androidTestImplementation 'androidx.test:rules:1.3.0'
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation 'androidx.test:core-ktx:1.3.0'
 
 }
