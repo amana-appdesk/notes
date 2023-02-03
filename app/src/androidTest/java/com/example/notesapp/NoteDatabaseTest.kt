@@ -27,6 +27,7 @@ class NoteDatabaseTest : TestCase(){
         val context = ApplicationProvider.getApplicationContext<Context>()
         db = Room.inMemoryDatabaseBuilder(context,NoteDatabase::class.java).build()
         dao = db.noteDao()
+
     }
 
     @After
